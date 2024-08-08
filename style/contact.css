@@ -1,0 +1,73 @@
+.contact {
+    display: none;
+}
+
+.contact-items {
+
+    & .contact-title {
+        margin: auto;
+        justify-content: center;
+        width: max-content;
+
+        & h1{
+            font-size: 70pt;
+        }
+    }
+
+    & .contact-info {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        
+        & #section-logo {
+            margin: auto;
+        }
+        & #section-logo-img {
+            height: 160px;
+        }
+        
+        & #section-info {
+            margin: auto;
+        }
+        
+        & #section-redes {
+            margin: auto;
+        }
+        
+        & .fa {
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 30px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+          }
+          
+          /* Add a hover effect if you want */
+        & .fa:hover {
+            opacity: 0.7;
+        }
+          
+          /* Set a specific color for each brand */
+          
+          /* Facebook */
+        & .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        & 
+        .fa-instagram {
+            background: #df3a5e;
+            color: white;
+        }
+        
+        & #section-local {
+            margin: auto;
+        }
+        
+        & #section-local-googlemaps {
+            height: 12rem;
+            width: 20rem;
+        }
+    }
+}
