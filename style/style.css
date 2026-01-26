@@ -20,6 +20,7 @@ body {
     color: var(--texto);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
 }
 
@@ -28,7 +29,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5px
+    margin: 5px;
+    width: 98%;
 }
 
 #container-header div.logo{
@@ -53,11 +55,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 98%;
 }
 
 #container-main section.section-video {
-    width: 450px;
     height: 300px;
+    width: 100%;
 }
 
 #container-main section.section-video > iframe{
@@ -72,6 +75,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    width: 98%;
 }
 
 #container-footer div.logo > div.img{
@@ -80,13 +84,13 @@ body {
 }
 
 #container-footer p {
-    font-size: 2em;
+    font-size: 1.8em;
     margin: 15px 0px;
 }
 
 #container-footer > div.localizacao {
-    height: 200px;
-    width: 370px;
+    width: 100%;
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -114,7 +118,7 @@ div.logo > div.img > img{
 }
 
 a.wpp{
-    font-size: 2em;
+    font-size: 1.6em;
     text-decoration: none;
     border: 2px solid var(--whatsapp-1);
     background-color: var(--whatsapp-2);
