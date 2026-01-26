@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo: #222222;
+    --texto: #eeeeee;
+    --whatsapp-1: rgb(0, 97, 0);
+    --whatsapp-2: rgb(127, 253, 127);
+    --borda-escura: #181818;
+    --borda-clara:  #ffffff;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#container-header {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px
+}
+
+#container-header div.logo{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+#container-header > p {
+    text-indent: 1em;
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+#container-main {
+    border: 2px solid red;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-main section.section-video {
+    width: 450px;
+    height: 300px;
+}
+
+#container-main section.section-video > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#container-footer {
+    border: 2px solid red;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#container-footer div.logo > div.img{
+    width: 200px;
+    height: 200px;
+}
+
+#container-footer p {
+    font-size: 2em;
+    margin: 15px 0px;
+}
+
+#container-footer > div.localizacao {
+    height: 200px;
+    width: 370px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#container-footer > div.localizacao > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* Configuração DIV img global */
+
+div.logo > div.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 3px solid var(--borda-escura);
+    outline: 2px solid var(--borda-clara);
+}
+
+div.logo > div.img > img{
+    width: 100%;
+    height: 100%;
+}
+
+a.wpp{
+    font-size: 2em;
+    text-decoration: none;
+    border: 2px solid var(--whatsapp-1);
+    background-color: var(--whatsapp-2);
+    color: var(--whatsapp-1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}

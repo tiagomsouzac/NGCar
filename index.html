@@ -4,196 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NGCar Centro Automotivo</title>
-    <link rel="icon" href="/images/logo.jpg">
-    <link rel="stylesheet" href="/style/index.css/">
-    <link rel="stylesheet" href="/style/home.css/">
-    <link rel="stylesheet" href="/style/service.css/">
-    <link rel="stylesheet" href="/style/contact.css/">
-    <link rel="stylesheet" href="/style/about.css/">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/6c62a850f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--Cabeçalho-->
     <header>
-        <!--Logo-->
-        <div id="header-logo">
-            <img src="images/logo.jpg" id="header-logo-img">
-            <!--Interação-->
-        </div>
+        <section id="container-header">
 
-        <!--Sumário-->
-        <ul id="header-buttons">
-            <li class="menu-content">Página inicial</li>
-            <li class="menu-content">Serviços</li>
-            <li class="menu-content">Quem somos</li>
-            <li class="menu-content">Contato</li>
-        </ul>
+            <!--Logo e Titulo-->
+            <div class="logo">
+                <div class="img"><img src="images/logo.jpg" alt="Logo NGCar"></div>
+                <h1>NGCar Centro Automotivo</h1>
+            </div>
+
+            <!--Descriçao-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, mollitia enim soluta pariatur consequatur vitae impedit eos, ipsum deserunt quas eligendi in ullam placeat! Illum, omnis. Perferendis, veniam quidem? Suscipit?</p>
+
+            <!--WhatsApp-->
+            <a href="" target="_blank" class="wpp"><i class="fa-brands fa-whatsapp"></i>Faça já seu orçamento.</a>
+        </section>
     </header>
 
-    <section id="section-container">
-
-        <!--Página inicial-->
-        <nav id="section-home" class="home">
-            <div id="home-divs">
-                <div class="text">
-                    <h1><i>NGCar: Seu Parceiro de Confiança em Manutenção e Reparos Automotivos!</i></h1>
-                </div>
-                <div class="slider">
-
-                <!--slides-->
-                <div class="slides">
-
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-
-                    <div class="slide first">
-                        <img src="" alt="img1">    
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="img2">
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="img3">
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="img4">
-                    </div>
-
-                    <!--auto navigation-->
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
-
-                    <!--manual navigation-->
-                    <div class="manual-navigation">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
-                    </div>
-                </div>
-
-                </div>
-            </div>
-        </nav>
-
+    <!--Parte principal do site-->
+    <main id="container-main">
+        <!--Vídeo-->
+        <section class="section-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3BFTio5296w?si=MjeytOJZUv3WyO4B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
         <!--Serviços-->
-        <nav id="section-service" class="service">
-            <div id="service-container">
+        <section>
 
-                <div class="service-title">
-                    <h1>Serviços</h1>
-                </div>
-                <ol id="service-items">
-                    <li>
-                        <img src="images/services/troca-de-oleo.jpg" alt="img1">
-                        <p>Troca de Óleo e Lubrificantes</p>
-                    </li>
-                    <li>
-                        <img src="images/services/alinhamento-balanceamento.jpg" alt="img2">
-                        <p>Alinhamento e Balanceamento</p>
-                    </li>
-                    <li>
-                        <img src="images/services/regulagem-motor.jpg" alt="img3">
-                        <p>Regulagem de Motores</p>
-                    </li>   
-                    <li>
-                        <img src="images/services/ar-condicionado.jpg" alt="img5">
-                        <p>Ar-condicionado</p>
-                    </li>    
-                    <li>
-                        <img src="images/services/escapamento.jpg" alt="img5">
-                        <p>Escapamento</p>
-                    </li>    
-                    <li>
-                        <img src="images/services/sistemas-eletronicos.jpg" alt="img5">
-                        <p>Sistemas eletrônicos</p>
-                    </li>
-                </ol>
-            </div>
-        </nav>
+        </section>
+    </main>
 
-        <!--Sobre-->
-        <nav id="section-aboutus" class="about">
-            <div class="about-container">
+    <!--Rodapé-->
+    <footer id="container-footer">
+        <!--Logo empresa-->
+        <div class="logo">
+            <div class="img"><img src="images/logo.jpg" alt="Logo NGCar"></div>
+        </div>
 
-                <div class="about-title">
-                    <h1>Quem somos</h1>
-                </div>
+        <!--WhatsApp-->
+        <a href=""  target="_blank"  class="wpp"><i class="fa-brands fa-whatsapp"></i>Faça já seu orçamento.</a>
 
-                <div class="about-item1">
-                    <img src="images/logo.jpg" alt="img1">
-                    <p>
-                        A NGCar é uma oficina mecânica de excelência, fundada em 2014 em Londrina. Nossa empresa foi criada por três sócios apaixonados pelo universo automotivo, com o objetivo de oferecer serviços de alta qualidade e atendimento diferenciado aos nossos clientes.
-                    </p>
-                </div>
-                <div class="about-item2">
-                    <p>
-                        Contamos com uma equipe de profissionais com mais de 20 anos de experiência em oficina mecânica, garantindo um serviço especializado e confiável. Nossa missão é proporcionar segurança e tranquilidade para você e seu veículo, através de um trabalho meticuloso e comprometido com os mais altos padrões de qualidade.
-                    </p>
-                    <img src="images/logo.jpg" alt="img2">      
-                </div>
-                <div class="about-item3">
-                    <img src="images/logo.jpg" alt="img3">
-                    <p>
-                        Na NGCar, realizamos uma ampla gama de serviços, desde manutenções preventivas até reparos complexos, sempre utilizando peças e equipamentos de última geração. Nosso compromisso é assegurar que cada veículo que passa por nossa oficina saia em perfeitas condições de funcionamento.
-                    </p>
-                </div> 
-                <div class="about-item4">
-                    <p>
-                        Seja qual for a necessidade do seu carro, você pode contar com a experiência e a dedicação da equipe NGCar. Venha nos visitar e descubra porque somos o seu parceiro de confiança em manutenção e reparos automotivos em Londrina.
-                    </p>
-                    <img src="images/logo.jpg" alt="img4">
-                </div>  
-            </div>
+        <!--CNPJ-->
+        <p>CNPJ: 23.209.977/0001-19</p>
 
-        </nav>
-
-        <!--Contato-->
-        <nav id="setion-contact" class="contact">
-            <div class="contact-items">
-
-                <!--Título-->
-                <div class="contact-title">
-                    <h1>Contato</h1>
-                </div>
-
-                <div class="contact-info">
-                    <!--Logo-->
-                    <div id="section-logo">
-                        <img src="images/logo.jpg" id="section-logo-img">
-                    </div>
-
-                    <!--Informações-->
-                    <div id="section-info">
-                        <div id="section-info-items">
-                            <h4>Contato</h4>
-                            <p>📞(43) 3357-9941</p>
-                            <p>📱(43) xxxxx-xxxx</p>
-                            <p>📧ngcar@sercomtel.com.br</p>
-                        </div>
-                    </div>
-
-                    <!--Redes Sociais-->
-                    <div id="section-redes">
-                        <h4>Redes Sociais</h4>
-                        <a href="https://www.facebook.com/ngcarcentroautomotivoofc" target="blank" class="fa fa-facebook"></a>
-                        <a href="https://www.instagram.com/ngcarcentroautomotivo/" target="blank" class="fa fa-instagram"></a>
-                    </div>
-
-                    <!--Localização-->
-                    <div id="section-local">
-                        <iframe id="section-local-googlemaps" src="https://www.google.com/maps/embed?pb=!4v1722123486754!6m8!1m7!1spoVei10LfG9YCtBaqcMxKA!2m2!1d-23.28502253371374!2d-51.17196269291681!3f157.8909891185844!4f-2.9189996485991543!5f1.0209678350506706" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            
-            </div>
-        </nav>
-    </section>
+        <!--Localização-->
+        <div class="localizacao"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.842201463248!2d-51.17452872552034!3d-23.28518277899062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb44d1d13c885d%3A0xf5a0157c3d737420!2sNGCar%20Centro%20Automotivo!5e0!3m2!1spt-BR!2sbr!4v1769431439283!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </footer>
 </body>
-    <script  src="/script/script.js"></script>
 </html>
