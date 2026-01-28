@@ -68,6 +68,8 @@ body {
     font-size: 3em;
     text-align: center;
     font-style: italic;
+    text-shadow: 2px 2px 2px #222222;
+
 }
 
 #container-header div.logo > h1 > p{
@@ -84,6 +86,8 @@ body {
     font-size: 1.2em;
     margin: 10px 10px;
     color: var(--texto);
+
+    text-shadow: 2px 2px 2px #222222;
 }
 
 #container-header > a{
@@ -94,12 +98,14 @@ body {
     border-radius: 2px;
     padding: 6px;
     margin: 10px 0px 10px 10px;
+    background-color: rgba(32, 32, 32, 0.397);
 }
 
 #container-header div.telefone{
     color: var(--texto);
     text-align: center;
     margin-bottom: 10px;
+    font-style: italic;
 }
 
 #container-main {
