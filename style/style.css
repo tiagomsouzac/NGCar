@@ -20,44 +20,86 @@
 }
 
 body {
-    background-color: var(--fundo);
-    color: var(--texto);
+    color: var(--fundo);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
 }
 
 #container-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5px;
-    width: 98%;
+    background-image: url('../images/home/fundo.jpg');
 }
 
 #container-header div.logo{
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 40% 1fr;
+
     align-items: center;
-    justify-content: center;
+    justify-items: center;
+
     padding: 10px;
-    gap: 20px;
 }
 
 #container-header div.logo > div.img{
-    grid-area: 1 / 1 / 2 / 2
+    grid-area: 1 / 1 / 2 / 2;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 2px solid var(--borda-clara);
+    outline: 1px solid var(--borda-escura);
+    
+    height: 100px;
 }
 
+#container-header div.logo > div.img > img{
+    width: 100%;
+    height: 100%;
+}
+
+
 #container-header div.logo > h1{
-    grid-area: 1 / 2 / 3 / 2
+    width: 100%;
+    grid-area: 1 / 2 / 3 / 2;
+    color: var(--texto);
+    font-size: 3em;
+    text-align: center;
+    font-style: italic;
+}
+
+#container-header div.logo > h1 > p{
+    color: var(--texto);
+    font-size: 0.4em;
+    text-align: center;
+    font-style: normal;
 }
 
 #container-header > p {
+    text-align: center;
     text-indent: 1em;
     text-align: justify;
     font-size: 1.2em;
-    padding: 5px;
+    margin: 10px 10px;
+    color: var(--texto);
+}
+
+#container-header > a{
+    font-size: 1.6em;
+    text-decoration: none;
+    border: 1px solid var(--borda-clara);
+    color: var(--borda-clara);
+    border-radius: 2px;
+    padding: 6px;
+    margin: 10px 0px 10px 10px;
+}
+
+#container-header div.telefone{
+    color: var(--texto);
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #container-main {
@@ -66,12 +108,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 98%;
+    width: 95%;
 }
 
 #container-main section.section-video {
     height: 300px;
-    width: 100%;
+    width: 300px;
 }
 
 #container-main section.section-video > iframe{
@@ -79,89 +121,65 @@ body {
     height: 100%;
 }
 
+#container-main section.section-servies {
+    height: 300px;
+    width: 100%;
+}
+
 #container-footer {
-    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    width: 98%;
+    background-color: var(--fundo);
 }
 
 #container-footer div.logo > div.img{
-    width: 200px;
-    height: 200px;
-}
-
-#container-footer div.redes {
-    margin: 30px 0px;
-}
-
-#container-footer p {
-    font-size: 1.8em;
-    margin: 15px 0px;
-}
-
-#container-footer > div.localizacao {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#container-footer > div.localizacao > iframe{
-    width: 100%;
-    height: 100%;
-}
-
-/* Configuração DIV img global */
-
-div.logo > div.img{
+    margin-top: 10px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
 
-    border: 3px solid var(--borda-escura);
-    outline: 2px solid var(--borda-clara);
+    border: 2px solid var(--borda-escura);
+    outline: 1px solid var(--borda-clara);
+
 }
 
-div.logo > div.img > img{
+#container-footer div.logo > div.img > img{
     width: 100%;
     height: 100%;
 }
 
-a.wpp{
-    font-size: 1.6em;
+#container-footer div.redes {
+    margin: 30px 0px 20px 0px;
+}
+
+#container-footer div.redes > a {
+    font-size: 1.2em;
     text-decoration: none;
-    border: 2px solid var(--whatsapp-1);
-    background-color: var(--whatsapp-2);
-    color: var(--whatsapp-1);
+    border: 2px solid var(--borda-clara);
+    color: var(--borda-clara);
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
+    padding: 6px;
+    margin: 0px 5px;
 }
 
 
-a.instagram{
-    font-size: 1.6em;
-    text-decoration: none;
-    border: 2px solid var(--instagram-2);
-    background-color: var(--instagram-1);
+#container-footer p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 15px 0px;
     color: var(--texto);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
 }
 
+#container-footer > div.localizacao {
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 300px;
+}
 
-a.facebook{
-    font-size: 1.6em;
+#container-footer > div.localizacao > a {
     text-decoration: none;
-    border: 2px solid var(--facebook-2);
-    background-color: var(--facebook-1);
     color: var(--texto);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
 }
