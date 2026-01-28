@@ -132,6 +132,7 @@ body {
     align-items: center;
     padding: 10px;
     background-color: var(--fundo);
+    width: 100%;
 }
 
 #container-footer div.logo > div.img{
