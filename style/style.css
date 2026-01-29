@@ -126,34 +126,36 @@ main {
 
 
 main .container-video{
-    width: 300px;
+    width: 100%;
     margin: auto;
 }
 
 main h2{
     padding-bottom: 5px;
+    margin-left: 10px;
 }
 
+
 .container-video iframe {
-    width: 100%;
-    aspect-ratio: 16/9;
+    width: 95%;
+    margin-left: 8px;
 }
 
 .container-services {
-    width: 300px;
+    width: 100%;
     margin: auto;
 }
 
 .container-services > .item {
-    margin: 10px auto;
-    width: 280px;
+    margin: 0px auto 10px auto;
+    width: 95%;
     border-radius: 8px;
     border: 2px solid var(--borda-clara);
     text-align: center;
 }
 
 .item > img{
-    width: 95%;
+    width: 98%;
     padding: 10px;
     border-radius: 20px;
 }
@@ -166,4 +168,31 @@ footer{
     border-top: 1px #eeeeee solid;
     background-color: var(--borda-escura);
     color: var(--texto);
+    text-align: center;
 }
+
+footer div{
+    margin-top: 10px;
+    font-size: 1.8em;
+}
+
+footer div i{
+    color: #eeeeee;
+}
+
+
+footer div p{
+    margin-top: 10px;
+    font-size: 0.6em;
+}
+
+footer .publi{
+    background-color: black;
+    color: var(--fundo);
+}
+
+.publi a{
+    font-size: 1em;
+    color: var(--borda-escura);
+}
+
