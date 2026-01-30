@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    #container-header {
+        height: 500px;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    #container-header > p{
+        font-size: 1.6em;
+        background-color: rgba(0, 0, 0, 0.123);
+        padding: 5px;
+        width: 80%;
+    }
+    #container-header > a{
+        font-size: 2em;
+        margin-top: 40px;
+        transition: font-size 0.5s, background-color 0.5s;
+    }
+
+    #container-header > a:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 2.05em;
+    }
+
+    #container-header div.telefone{
+        font-size: 1.4em;
+        background-color: rgba(0, 0, 0, 0.123);
+        padding: 5px;
+    }
+
+    main h2{
+        font-size: 2em;
+    }
+
+    .container-video .video {
+        height: 400px;
+    }
+
+    .video iframe {
+        height: 100%;
+    }
+
+    .container-services {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0px auto;
+        width: 90%;
+        gap: 5px;
+        
+    }
+    .container-services > .item {
+        flex-basis: 350px;
+    }
+}
+
+
+@media screen and (min-width: 1000px){    
+
+    #container-header > p{
+        font-size: 2em;
+    }
+
+    main h2{
+        font-size: 3em;
+    }
+    .container-video .video {
+        height: 600px;
+    }
+
+    .container-services {
+        width: 90%;
+    }
+    .container-services > .item {
+        flex-basis: 440px;
+    }}

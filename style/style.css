@@ -30,6 +30,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: url('../images/home/fundo.jpg');
+    background-position: left top;
 }
 
 
@@ -107,7 +108,6 @@ body {
     margin: 10px 0px 10px 10px;
     background-color: rgba(32, 32, 32, 0.397);
 }
-
 /* DIV TELEFONE HEADER */
 #container-header div.telefone{
     color: var(--texto);
@@ -127,7 +127,6 @@ main {
 
 main .container-video{
     width: 100%;
-    margin: auto;
 }
 
 main h2{
@@ -135,10 +134,12 @@ main h2{
     margin-left: 10px;
 }
 
+.container-video .video {
+    text-align: center;
+}
 
 .container-video iframe {
     width: 95%;
-    margin-left: 8px;
 }
 
 .container-services {
@@ -156,12 +157,14 @@ main h2{
 
 .item > img{
     width: 98%;
+    height: 80%;
     padding: 10px;
     border-radius: 20px;
 }
 
 .item > p{
     padding-bottom: 5px;
+    font-size: 1.5em;
 }
 
 footer{
@@ -185,14 +188,26 @@ footer div p{
     margin-top: 10px;
     font-size: 0.6em;
 }
+footer .informações{
+    text-align: center;
+}
+footer .informações a{
+    color: var(--texto);
+    text-decoration: none;
+    font-size: 0.6em;
+}
 
 footer .publi{
     background-color: black;
     color: var(--fundo);
 }
 
+footer .publi p{
+    color: #5c5c5c;
+}
+
 .publi a{
     font-size: 1em;
-    color: var(--borda-escura);
+    color: #727272;
 }
 
